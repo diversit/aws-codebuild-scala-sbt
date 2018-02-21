@@ -4,9 +4,9 @@ This repository contains a **Dockerfile** for Docker, [Scala](http://www.scala-l
 
 
 ## Based on
-[AWS CodeBuild Ubuntu Java OpenJDK 8](https://github.com/aws/aws-codebuild-docker-images/blob/master/ubuntu/java/openjdk-8/Dockerfile)
-But since those docker images do not seem to be publicly available, that Dockerfile has been used as the base for this Dockerfile and has been extended to install Scala and Sbt.
+[AWS CodeBuild Ubuntu Java OpenJDK 8](https://github.com/aws/aws-codebuild-docker-images/blob/master/ubuntu/java/openjdk-8/Dockerfile), but since those docker images do not seem to be publicly available, that Dockerfile has been used as the base for this Dockerfile and has been extended to install Scala and Sbt.
 
+Difference with other scala-sbt images, like hseeberger/scala-sbt, is that this image also contains the 'docker' tools so a docker command can natively be executed to build a docker image of the project.
 
 ## Installation ##
 
